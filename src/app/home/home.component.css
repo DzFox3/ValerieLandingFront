@@ -1,0 +1,337 @@
+/*COLORES*/
+.bg-pet{
+    background-color: #084558;
+}
+.let-pet{
+    color: #084558;
+}
+.bg-bage{
+    background-color: #caba9f;
+}
+.let-bage{
+    color: #caba9f;
+}
+/*BIENVENIDA*/
+.hero {
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: url('/assets/FondoOscuro.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    display: flex;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.65); /* Oscurece la imagen */
+  z-index: 1;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+section{
+    font-family: 'Montserrat', sans-serif;
+}
+.content{
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.beneficios li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #fff; /* color del texto */
+  padding-left: 11%;
+}
+
+.tilde{
+    color: #0c7494;
+}
+.contacto{
+    background-color: #084558;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+}
+.contacto:hover{
+    transform: scale(1.05); /* Animación suave */
+}
+
+/*BOTON WHATSAPP*/
+.whatsapp-btn {
+    position: fixed;
+    right: 20px; /* Ajusta la distancia desde el borde derecho */
+    top: 85%; /* Centrado vertical */
+    transform: translateY(-50%);
+    z-index: 1000; /* Asegura que esté encima del contenido */
+}
+
+.whatsapp-btn img {
+    width: 60px; /* Tamaño del ícono */
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
+
+/*SECCION 1 TARJETAS*/
+.tarjetas-container {
+  padding: 40px 40px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.tarjetas-container h2 {
+  font-size: 24px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.tarjetas-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  justify-items: center;
+}
+
+.tarjeta {
+  background-color: #fff;
+  color: #000;
+  border-radius: 6px;
+  padding: 30px 20px;
+  max-width: 300px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px);
+}
+
+.tarjeta i {
+  font-size: 40px;
+  margin-bottom: 15px;
+  color: #000;
+}
+
+.tarjeta h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.tarjeta p {
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+.tarjeta i{
+    height: 50px;
+    width: 60px;
+}
+
+/*SECCION 2 EQUIPO*/
+.btn-consulta {
+    background-color: #084558;
+    color: white;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+  }
+
+  .btn-consulta:hover {
+    background-color: #0c7494; 
+    transform: scale(1.05); /* Animación suave */
+  }
+
+  /*SECCION 3*/
+  .btn3 .btn-consulta {
+    background-color: wheat;
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 8px;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.4s ease, transform 0.3s ease;
+  }
+
+  .btn3 .btn-consulta:hover {
+    transform: scale(1.05); /* Animación suave */;
+  }
+
+/*SECCION 4 PREGUNTAS*/
+.faq-section {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.faq-section h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
+
+.faq-item {
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.faq-item summary {
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  background-color: #f9f4f0;
+  list-style: none;
+}
+
+.faq-item[open] summary {
+  background-color: #eee;
+}
+
+.faq-item p,
+.faq-item ul {
+  padding: 2rem;
+  margin: 0;
+  backdrop-filter: blur(3px); /* Difuminado */
+}
+
+/* 🎯 Fondo difuminado solo cuando se abre la pregunta */
+.blur-background {
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+  /*SECCION 5 FORMULARIO*/
+.form-section {
+    position: relative;
+  overflow: hidden;
+  
+}
+.form-section::before {
+    content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  filter: blur(8px);
+  z-index: 0;
+  background: url('/assets/FondoForm2.jpg') center center / cover no-repeat;
+  filter: blur(3px); 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  min-height: 100vh;
+}
+
+.form-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  margin-left: 33%;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 3rem;
+  border-radius: 12px;
+  max-width: 500px;
+  width: 100%;
+  color: white;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
+
+.logo {
+  max-width: 150px;
+  margin-bottom: 1.5rem;
+}
+
+.form-title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.form-subtitle {
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  text-align: left;
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 0.75rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.submit-button {
+  width: 100%;
+  background-color: #084558;
+  color: white;
+  padding: 0.9rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #023c4d;
+}
+/*CAMBIO DE RESOLUCION*/
+@media (max-width: 767px) {
+    .beneficios li{
+        padding-left: 3%;
+        text-align: start;
+    }
+    .beneficios li svg{
+        margin-bottom: 25px;
+    }
+    .secc2{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
+    .form-container{
+        margin-left: 3%;
+    }
+    .faq-section{
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
