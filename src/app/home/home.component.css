@@ -5,12 +5,6 @@
 .let-pet{
     color: #084558;
 }
-.bg-bage{
-    background-color: #caba9f;
-}
-.let-bage{
-    color: #caba9f;
-}
 /*BIENVENIDA*/
 .hero {
     position: relative;
@@ -46,13 +40,15 @@ section{
     z-index: 2;
     max-width: 800px;
 }
-
+.content p{
+  font-size: 1rem;
+}
 .beneficios li {
   display: flex;
-  align-items: center;
   gap: 8px;
   color: #fff; /* color del texto */
-  padding-left: 11%;
+  padding-left: 16%;
+  font-size: 0.9rem;
 }
 
 .tilde{
@@ -155,7 +151,12 @@ section{
   border: 3px solid #00204D;
   border-radius: 8px;
 }
-
+.secc2-texto h2{
+  font-weight: 700;
+  font-size: 1.8rem;
+  color: #1d1d1f;
+  margin-bottom: 1rem;
+}
 .btn-consulta {
     background-color: #084558;
     color: white;
@@ -327,11 +328,20 @@ section{
         text-align: start;
     }
     .beneficios li svg{
-        margin-bottom: 25px;
+        margin-bottom: 20px;
     }
     .secc2{
         margin-left: 8%;
         margin-right: 8%;
+    }
+    .secc2-texto h2{
+      font-size: 1.5rem;
+    }
+    .secc2-flex{
+      flex-direction: column-reverse;
+    }
+    .secc2-texto ul li {
+      margin-bottom: 1rem;
     }
     .Valerie{
       width: 100%;

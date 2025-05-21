@@ -3,3 +3,17 @@ footer i:hover {
   transform: scale(1.2);
   transition: 0.3s;
 }
+footer svg:hover {
+  color: #0d6efd; /* Azul Bootstrap */
+  transform: scale(1.2);
+  transition: 0.3s;
+}
+.footer-link {
+  color: inherit;         /* usa el color del texto alrededor, suele ser gris en el footer */
+  text-decoration: none;  /* sin subrayado */
+  font-weight: bold;      /* opcional: para destacarlo levemente */
+}
+
+.footer-link:hover {
+  text-decoration: underline; /* opcional: efecto al pasar el mouse */
+}
