@@ -1,11 +1,32 @@
 import { Component } from '@angular/core';
+import {
+  trigger,
+  transition,
+  style,
+  animate
+} from '@angular/animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.css']
+  styleUrls: ['./home.component.css'],
+  animations: [
+    trigger('fadeIn', [
+      transition(':enter', [ // Cuando el elemento entra en el DOM
+        style({ opacity: 0 }),
+        animate('600ms ease-out', style({ opacity: 1 }))
+      ])
+    ]),
+    trigger('slideUp', [
+      transition(':enter', [
+        style({ transform: 'translateY(30px)', opacity: 0 }),
+        animate('500ms ease-out', style({ transform: 'translateY(0)', opacity: 1 }))
+      ])
+    ])
+  ]
 })
-export class HomeComponent {
+export class HomeComponent{
+  
   preguntas = [
     {
       pregunta: '¿QUIÉNES PUEDEN ACCEDER A LOS SEGUROS DE VBESERENI?',

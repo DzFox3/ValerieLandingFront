@@ -2,27 +2,27 @@
 <section class="hero text-white d-flex align-items-center justify-content-center text-center">
     <div class="overlay"></div>
     <div class="content">
-        <img src="/assets/Logo.png" alt="Logo" class="mb-5" style="max-width: 200px;">
-        <h2 class="fw-bold">PROTEGE TU SALUD Y LA DE TU FAMILIA CON LA MEJOR COBERTURA EN EE.UU</h2>
-        <p class="lead mt-3">Planes de salud y vida diseñados para proteger lo mas importante: tú y tu familia, para que tomes desiciones con claridad y confianza.</p>
+        <img @fadeIn src="/assets/Logo.png" alt="Logo" class="mb-5" style="max-width: 200px;">
+        <h2 appAnimateOnScroll [delay]="'0s'" class="fw-bold">PROTEGE TU SALUD Y LA DE TU FAMILIA CON LA MEJOR COBERTURA EN EE.UU</h2>
+        <p appAnimateOnScroll [delay]="'0.2s'" class="lead mt-3">Planes de salud y vida diseñados para proteger lo mas importante: tú y tu familia, para que tomes desiciones con claridad y confianza.</p>
         <ul class="list-unstyled beneficios mt-4">
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg tilde" viewBox="0 0 16 16">
+            <li appAnimateOnScroll [delay]="'0.4s'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg tilde" viewBox="0 0 16 16">
                     <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                 </svg>
                 Cobertura para todos: ACA, Medicare, seguros suplementarios y de vida.</li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg tilde" viewBox="0 0 16 16">
+            <li appAnimateOnScroll [delay]="'0.6s'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg tilde" viewBox="0 0 16 16">
                     <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                 </svg>
                 Asesoría personalizada: te guiamos en cada paso del proceso.</li>
-            <li>
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-check-lg tilde" viewBox="0 0 16 16">
+            <li appAnimateOnScroll [delay]="'0.8s'">
+                <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-check-lg tilde" viewBox="0 0 16 16">
                     <path d="M12.736 3.97a.733.733 0 0 1 1.047 0c.286.289.29.756.01 1.05L7.88 12.01a.733.733 0 0 1-1.065.02L3.217 8.384a.757.757 0 0 1 0-1.06.733.733 0 0 1 1.047 0l3.052 3.093 5.4-6.425z"/>
                 </svg>
                 Proceso rápido y sencillo a través de llamadas telefónicas.</li>
         </ul>
-        <a href="#formulario" class="btn bg-pet text-white mt-4 contacto" style="border: none;">
+        <a appAnimateOnScroll [delay]="'1s'" href="#formulario" class="btn bg-pet text-white mt-4 contacto" style="border: none;">
             Consulta gratis tu seguro ahora
         </a>
     </div>
@@ -52,7 +52,7 @@
 
       <!-- Imagen -->
       <div class="secc2-img pb-2" style="flex: 1 1 300px; text-align: center;">
-        <img class="Valerie" src="assets/Vale.JPG" alt="Asesora">
+        <img class="Valerie" src="assets/Valerie.JPG" alt="Asesora">
       </div>
     </div>
     <!-- Botón -->
@@ -64,34 +64,34 @@
 
 <!--SECCION 2 TARJETAS-->
 <section class="tarjetas-container">
-    <h2>ELIGE Y ACTIVA TU COBERTURA EN POCOS PASOS</h2>
+    <h2 @fadeIn>ELIGE Y ACTIVA TU COBERTURA EN POCOS PASOS</h2>
 
     <div class="tarjetas-grid">
-      <div class="tarjeta">
+      <div appAnimateOnScroll [delay]="'0s'" class="tarjeta">
         <i class="fa-solid fa-id-card"></i>
         <h3>Déjanos tus datos</h3>
         <p>Completa el formulario con tu información de contacto para comenzar.</p>
       </div>
 
-      <div class="tarjeta">
+      <div appAnimateOnScroll [delay]="'0.2s'" class="tarjeta">
         <i class="fas fa-handshake"></i>
         <h3>Asesoría personalizada</h3>
         <p>Un especialista de nuestro equipo te explicará las opciones disponibles según tu situacion y necesidades reales.</p>
       </div>
 
-      <div class="tarjeta">
+      <div appAnimateOnScroll [delay]="'0.4s'" class="tarjeta">
         <i class="fa-solid fa-list-check"></i>
         <h3>Elije el plan ideal para ti</h3>
         <p>Selecciona entre opciones de ACA, Medicare, seguros suplementarios y de vida.</p>
       </div>
 
-      <div class="tarjeta">
+      <div appAnimateOnScroll [delay]="'0.6s'" class="tarjeta">
         <i class="fa-solid fa-pen-to-square"></i>
         <h3>Te ayudamos con todo el proceso</h3>
         <p>Gestionamos cada trámite necesarios para tu activar tu cobertura de forma rapida y sin complicaciones.</p>
       </div>
 
-      <div class="tarjeta">
+      <div appAnimateOnScroll [delay]="'0.8s'" class="tarjeta">
         <i class="fa-solid fa-heart"></i>
         <h3>Disfruta de tu poliza con total tranquilidad</h3>
         <p>Recibe todos los beneficios y la documentación de tu plan, con el respaldo de nuestro equipo.</p>
@@ -101,28 +101,28 @@
 
 <!--SECCION 3 TESTIMONIOS-->
 <section class="secc3" style="background-color: #084558; padding: 3rem 1rem; text-align: center;">
-  <h2 style="color: white; font-weight: bold; font-size: 1.8rem; margin-bottom: 2rem;">
+  <h2 @fadeIn style="color: white; font-weight: bold; font-size: 1.8rem; margin-bottom: 2rem;">
     Testimonios de quienes ya confiaron en nosotros
   </h2>
 
   <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; max-width: 1200px; margin: auto;">
     
     <!-- Testimonio 1 -->
-    <div style="background-color: #fff; color: black; border-radius: 15px; padding: 1.5rem; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    <div appAnimateOnScroll [delay]="'0s'" style="background-color: #fff; color: black; border-radius: 15px; padding: 1.5rem; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
       <strong style="display: block; margin-bottom: 0.5rem;">Gabriela Torres</strong>
       <div style="color: #f1c40f; margin-bottom: 1rem;">★ ★ ★ ★ ★</div>
       <p>"Muchísimas gracias. Que Dios los bendiga, estoy profundamente agradecida con ustedes"</p>
     </div>
 
     <!-- Testimonio 2 -->
-    <div style="background-color: #fff; color: black; border-radius: 15px; padding: 1.5rem; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    <div appAnimateOnScroll [delay]="'0.2s'" style="background-color: #fff; color: black; border-radius: 15px; padding: 1.5rem; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
       <strong style="display: block; margin-bottom: 0.5rem;">Lucía Martínez</strong>
       <div style="color: #f1c40f; margin-bottom: 1rem;">★ ★ ★ ★ ★</div>
       <p>"Son los mejores. La atención que brindan es espectacular. Me sentí muy bien acompañada"</p>
     </div>
 
     <!-- Testimonio 3 -->
-    <div style="background-color: #fff; color: black; border-radius: 15px; padding: 1.5rem; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
+    <div appAnimateOnScroll [delay]="'0.4s'" style="background-color: #fff; color: black; border-radius: 15px; padding: 1.5rem; width: 300px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);">
       <strong style="display: block; margin-bottom: 0.5rem;">Daniela Ríos</strong>
       <div style="color: #f1c40f; margin-bottom: 1rem;">★ ★ ★ ★ ★</div>
       <p>"Gracias por toda tu gestión. Me sentí escuchada y muy bien guiada en cada paso"</p>
@@ -131,14 +131,14 @@
   </div>
 
   <!-- Botón -->
-  <div style="text-align: center; margin-top: 2rem;" class="btn3">
+  <div appAnimateOnScroll [delay]="'0.6s'" style="text-align: center; margin-top: 2rem;" class="btn3">
     <a href="#formulario" class="btn-consulta">Solicita gratis más informacion ahora</a>
   </div>
 </section>
 
 <!--SECCION 4 PREGUNTAS-->
 <div style="background-color: #fdf6f0;">
-    <section class="faq-section">
+    <section @fadeIn class="faq-section">
         <h2 class="pt-2">PREGUNTAS FRECUENTES</h2>
 
         <details class="faq-item">
@@ -190,24 +190,12 @@
 
       <div class="form-group">
         <label for="telefono">Teléfono</label>
-        <input type="tel" id="telefono" name="telefono" placeholder="(201) 555-0123" />
+        <input type="tel" id="telefono" name="telefono" placeholder="(+12) 123456789" />
       </div>
 
-      <div class="form-group">
+      <div class="form-group pb-4">
         <label for="email">Email</label>
         <input type="email" id="email" name="email" placeholder="Email" />
-      </div>
-
-      <div class="form-group pb-3">
-        <label for="seguro">Tipo de Seguro</label>
-        <select id="seguro" name="seguro">
-          <option>Obamacare</option>
-          <option>Medicare</option>
-          <option>Vida</option>
-          <option>Suplementarios</option>
-          <option>Accidentes</option>
-          <option>Otro</option>
-        </select>
       </div>
 
       <button type="submit" class="submit-button">Enviar</button>
@@ -215,6 +203,6 @@
   </div>
 </section>
 <!-- Botón de WhatsApp -->
-<a href="https://wa.me/+17866728449" class="whatsapp-btn" target="_blank">
+<a @fadeIn href="https://wa.me/+17866728449" class="whatsapp-btn" target="_blank">
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
 </a>

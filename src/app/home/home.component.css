@@ -5,6 +5,11 @@
 .let-pet{
     color: #084558;
 }
+/*ANIMACIONES*/
+.animate {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
 /*BIENVENIDA*/
 .hero {
     position: relative;
@@ -49,8 +54,8 @@ section{
   color: #fff; /* color del texto */
   padding-left: 16%;
   font-size: 0.9rem;
+  margin-bottom: 0.7rem;
 }
-
 .tilde{
     color: #0c7494;
 }
