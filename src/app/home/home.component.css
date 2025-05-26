@@ -67,10 +67,11 @@ section{
     font-weight: 600;
     text-decoration: none;
     display: inline-block;
-    transition: background-color 0.4s ease, transform 0.3s ease;
+    transition: transform 0.3s ease-in-out;
 }
-.contacto:hover{
-    transform: scale(1.05); /* Animación suave */
+.contacto:hover{  
+    color: #118cb1;
+    transform: scale(1.1);
 }
 
 /*BOTON WHATSAPP*/
@@ -91,6 +92,27 @@ section{
 }
 
 .whatsapp-btn img:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
+}
+/*BOTON FLECHA*/
+.flecha-btn {
+    position: fixed;
+    right: 30px; /* Ajusta la distancia desde el borde derecho */
+    top: 94%; /* Centrado vertical */
+    transform: translateY(-50%);
+    z-index: 1000; /* Asegura que esté encima del contenido */
+}
+
+.flecha-btn svg {
+    color: #0c6e8b;
+    width: 40px; /* Tamaño del ícono */
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease-in-out;
+}
+
+.flecha-btn svg:hover {
+    color: #118cb1;
     transform: scale(1.1); /* Efecto de zoom al pasar el cursor */
 }
 
@@ -131,7 +153,7 @@ section{
 .tarjeta i {
   font-size: 40px;
   margin-bottom: 15px;
-  color: #000;
+  color: #084558;
 }
 
 .tarjeta h3 {
@@ -326,6 +348,7 @@ section{
 .submit-button:hover {
   background-color: #023c4d;
 }
+
 /*CAMBIO DE RESOLUCION*/
 @media (max-width: 767px) {
     .beneficios li{
